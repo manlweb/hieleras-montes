@@ -154,7 +154,7 @@ button,input,textarea{font:inherit}
 
 .products-grid{
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:24px;
 }
 .product-card{
@@ -177,6 +177,7 @@ button,input,textarea{font:inherit}
   font-size:.88rem;
 }
 .product-info h3{font-size:1.55rem;line-height:1.15;margin:18px 0 6px;color:var(--azul-marino)}
+.model-subtitle{margin:0 0 10px;color:var(--gris);font-weight:700}
 .price{font-size:2.4rem;font-weight:900;margin:10px 0;color:var(--naranja);letter-spacing:-.04em}
 .price small{font-size:1rem;color:var(--gris);letter-spacing:0}
 .specs{list-style:none;margin:18px 0 22px;padding:0;display:grid;gap:8px;color:var(--gris)}
@@ -290,6 +291,9 @@ button,input,textarea{font:inherit}
   font-weight:900;
 }
 
+@media (max-width:1180px){
+  .products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 @media (max-width:980px){
   .hero,.payment-layout{grid-template-columns:1fr}
   .products-grid,.footer-grid{grid-template-columns:1fr}
